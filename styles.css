@@ -17,6 +17,10 @@ img {
     height: 100%;
     max-height: 50vh;
 }
+
+p {
+    line-height: 1.5;
+}
 .nav__container {
     width: 100%;
     max-width: 1200px;
@@ -125,7 +129,7 @@ button:active {
 
 .header__img--wrapper {
     padding: 20px;
-    z-index: 50;
+    z-index: 2;
 }
 
 .header__img {
@@ -145,5 +149,69 @@ HIGHLIGHTS
 
 */
 
+#highlights {
+    position: relative;
+}
 
-.highlifhg
+#highlights:before {
+    background: url(assets/wave.svg);
+    content: "";
+    top: 1px;
+    left: 0;
+    transform: translateY(-100%);
+    position: absolute;
+    width: 101vw;
+    height: 12vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+#highlights:after {
+    background: url(assets/wave.svg);
+    content: "";
+    bottom: 1px;
+    left: 0;
+    position: absolute;
+    transform: translateY(-100%);
+    width: 101vw;
+    height: 12vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.highlight__wrapper {
+    display: flex;
+}
+
+.highlight {
+    padding: 0 24px;
+    width: calc(100% / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.highlight__para {
+    text-align: center;
+}
+
+.highlight__img {
+    border: 2px solid #48575e4f;
+    color: #48575e;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+.highlight__subtitle {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
