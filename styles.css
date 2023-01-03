@@ -44,14 +44,13 @@ a:hover {
     max-width: 1200px;
     display: flex;
     padding: 0 24px;
-    background-color: #bebdb5;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
 }
 
 .gray {
-    color: #48575e;
+    color: #7342d6;
 }
 
 .logo {
@@ -70,13 +69,18 @@ li {
     margin-left: 16px;
     text-decoration: none;
     font-size: 20px;
-    color: #48575e;
+    color: #7342d6;
     font-weight: bold;
     padding: 8px;
 }
 
 .nav__link:hover {
     text-decoration: underline;
+}
+
+.nav__link--primary {
+    border: 2px solid #7342d6;
+    border-radius: 4px;
 }
 
 .nav__link--primary:hover {
@@ -88,7 +92,7 @@ li {
     font-size: 40px;
     text-align: center;
     border: none;
-    color: #48575e;
+    color: #7342d6;
     display: none;
 }
 
@@ -140,13 +144,9 @@ li {
     padding: 8px;
     color: white;
 }
-.nav__link--primary {
-    border: 2px solid #48575e;
-    border-radius: 5px;
-}
 
 #landing {
-    background-color: #aca99a;
+    background-color: rgba(115, 66, 214, 0.1)
 }
 
 header {
@@ -174,7 +174,7 @@ header {
 
 h1 {
     font-size: 56px;
-    color: #48575e;
+    color: #7342d6;
     margin-bottom: 24px;
     text-align: center;
 }
@@ -194,7 +194,7 @@ button:active {
 }
 
 .btn {
-    background-color: #48575e;
+    background-color: #7342d6;
     color: white;
     padding: 12px 24px;
     font-size: 20px;
@@ -282,8 +282,8 @@ HIGHLIGHTS
 }
 
 .highlight__img {
-    border: 2px solid #48575e4f;
-    color: #48575e;
+    border: 2px solid #7342d65d;
+    color: #7342d6;
     width: 100px;
     height: 100px;
     display: flex;
@@ -308,9 +308,8 @@ FEATURES
 */
 
 #features {
-    background-color: #bebdb5;
-    padding-top: 10vw;
-    height: 850px;
+    padding-top: 8vw;
+    background-color: rgba(115, 66, 214, 0.1);
 }
 
 .books {
@@ -358,7 +357,7 @@ FEATURES
 .book__price--normal {
     text-decoration: line-through;
     padding-right: 6px;
-    color: #7a7a7a;
+    color: #bfbfbf;
 }
 
 #recent {
@@ -373,9 +372,8 @@ EXPLORE
 */
 
 #explore {
-    padding-top: 4vw;
-    background-color: #bebdb5;
-    padding-bottom: 32px;
+    padding: 5vh 0;
+    background-color: rgba(115, 66, 214, 0.1);
 }
 
 
@@ -386,7 +384,7 @@ FOOTER
 */
 
 footer {
-    padding-top: 3vw;
+    padding: 2vh 0;
     background-color: #242424;
 }
 
