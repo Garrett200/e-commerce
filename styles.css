@@ -50,7 +50,7 @@ a:hover {
 }
 
 .gray {
-    color: #7342d6;
+    color: #4aa584;
 }
 
 .logo {
@@ -69,7 +69,7 @@ li {
     margin-left: 16px;
     text-decoration: none;
     font-size: 20px;
-    color: #7342d6;
+    color: #4aa584;
     font-weight: bold;
     padding: 8px;
 }
@@ -79,7 +79,7 @@ li {
 }
 
 .nav__link--primary {
-    border: 2px solid #7342d6;
+    border: 2px solid #4aa584;
     border-radius: 4px;
 }
 
@@ -92,7 +92,7 @@ li {
     font-size: 40px;
     text-align: center;
     border: none;
-    color: #7342d6;
+    color: #4aa584;
     display: none;
 }
 
@@ -174,7 +174,7 @@ header {
 
 h1 {
     font-size: 56px;
-    color: #7342d6;
+    color: #4aa584;
     margin-bottom: 24px;
     text-align: center;
 }
@@ -194,7 +194,7 @@ button:active {
 }
 
 .btn {
-    background-color: #7342d6;
+    background-color: #4aa584;
     color: white;
     padding: 12px 24px;
     font-size: 20px;
@@ -282,8 +282,8 @@ HIGHLIGHTS
 }
 
 .highlight__img {
-    border: 2px solid #7342d65d;
-    color: #7342d6;
+    border: 2px solid #3e856b;
+    color: #4aa584;
     width: 100px;
     height: 100px;
     display: flex;
