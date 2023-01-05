@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
-    <link rel="stylesheet" href="styles_books.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-    <script src="books.js"></script>
+    <script src="books.js" defer></script>
 </head>
 
 <body>
@@ -42,108 +42,47 @@
                 </div>
             </div>
         </nav>
-        </section>
-        <section id="all__books">
+    </section>
+    <main id="books__main">
+        <section>
             <div class="container">
                 <div class="row">
-                    <h2 class="section__title">
-                        All <span class="green">Books</span>
-                    </h2>
+                    <div class="books__header">
+                        <h2 class="section__title books__header--title">
+                            All <span class="green">Books</span>
+                        </h2>
+                        <select id="filter" onchange="filterBooks(event)">
+                            <option value="" disabled selected>Sort</option>
+                            <option value="LOW_TO_HIGH">Price, Low to High</option>
+                            <option value="HIGH_TO_LOW">Price, High to Low</option>
+                            <option value="RATING">Rating</option>
+                        </select>
+                    </div>
                     <div class="books">
-                        <div class="book">
-                            <figure class="book__img--wrapper">
-                                <img class="book__img" src="assets/crack the coding interview.png" alt="">
-                            </figure>
-                            <div class="book__title">
-                                Crack the Coding Interview
-                            </div>
-                            <div class="book__ratings">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <div class="book__price">
-                                <span class="book__price--normal">$59.95</span> $14.95
-                            </div>
-                        </div>
-                        <div class="book">
-                            <figure class="book__img--wrapper">
-                                <img class="book__img" src="assets/atomic habits.jpg" alt="">
-                            </figure>
-                            <div class="book__title">
-                                Atomic Habits
-                            </div>
-                            <div class="book__ratings">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <div class="book__price">
-                                <span class="book__price--normal">$59.95</span> $12.95
-                            </div>
-                        </div>
-                        <div class="book">
-                            <figure class="book__img--wrapper">
-                                <img class="book__img" src="assets/david goggins.jpeg" alt="">
-                            </figure>
-                            <div class="book__title">
-                                Can't Hurt Me
-                            </div>
-                            <div class="book__ratings">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <div class="book__price">
-                                <span class="book__price--normal">$59.95</span> $28.95
-                            </div>
-                        </div>
-                        <div class="book">
-                            <figure class="book__img--wrapper">
-                                <img class="book__img" src="assets/deep work.jpeg" alt="">
-                            </figure>
-                            <div class="book__title">
-                                Deep Work
-                            </div>
-                            <div class="book__ratings">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <div class="book__price">
-                                <span class="book__price--normal">$59.95</span> $12.95
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
         </section>
-        <footer>
-            <div class="container">
-                <div class="row row__column">
-                    <a href="#">
-                        <figure class="footer__logo">
-                            <img src="assets/Library.svg" class="footer__logo--img" alt="">
-                        </figure>
-                    </a>
-                    <div class="footer__list">
-                        <a href="" class="footer__link no-cursor">Home</a>
-                        <a href="" class="footer__link no-cursor">About</a>
-                        <a href="" class="footer__link no-cursor">Books</a>
-                        <a href="" class="footer__link no-cursor">Contact</a>
-                    </div>
-                    <div class="footer__copyright">Copyright &copy; 2022 Library</div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row row__column">
+                <a href="#">
+                    <figure class="footer__logo">
+                        <img src="assets/Library.svg" class="footer__logo--img" alt="">
+                    </figure>
+                </a>
+                <div class="footer__list">
+                    <a href="" class="footer__link no-cursor">Home</a>
+                    <a href="" class="footer__link no-cursor">About</a>
+                    <a href="" class="footer__link no-cursor">Books</a>
+                    <a href="" class="footer__link no-cursor">Contact</a>
                 </div>
+                <div class="footer__copyright">Copyright &copy; 2022 Library</div>
             </div>
-        </footer>
+        </div>
+    </footer>
 </body>
 
 </html>
